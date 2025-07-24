@@ -1,5 +1,83 @@
-h1 {
-    font-size: 34px;
-    margin-top: 60px;
-    margin-left: 60px;
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(/images/madrid.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffff;
+  padding: 200px 0px;
+}
+header h1 {
+  font-size: 96px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: #272044;
+  padding: 16px 32px;
+  background-color: #ffff;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  header h2 {
+    font-size: 20;
+    line-height: 1.5;
+  }
+
+  header h3 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  header a {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
