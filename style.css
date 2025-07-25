@@ -61,6 +61,7 @@ header a {
 }
 main {
   background-color: #ffff;
+  color: #272044;
 }
 
 main h2 {
@@ -69,12 +70,27 @@ main h2 {
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 main h3 {
   font-size: 40px;
   line-height: 1.5;
   font-weight: 700;
   margin: 0;
+}
+
+main h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+main h5 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
 }
 main p {
   font-size: 16px;
@@ -83,7 +99,7 @@ main p {
   font-weight: 400;
 }
 
-main .image-landmark {
+main .image-responsive {
   max-width: 100%;
 }
 
@@ -100,9 +116,32 @@ footer {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0px;
+  padding: 100px;
+}
+
+.cards {
+  background-color: #f8f8f8;
+}
+
+.cards .card-text {
+  padding: 0px 20px 20px 20px;
+  background-color: white;
+}
+
+.cards a {
+  text-decoration: none;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+}
+
+.cards .btn {
+  max-width: 100%;
+  background-color: #462cb2;
+  color: #ffff;
+  padding: 16px 32px;
 }
 
 footer h3 {
@@ -138,8 +177,16 @@ footer a {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-.grid-3-columns {
+.grid-3-columns-uneven {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns-even {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 960px) {
@@ -174,7 +221,7 @@ footer a {
   .grid-2-columns {
     grid-template-columns: 1fr;
   }
-  .grid-3-columns {
+  .grid-3-columns-uneven {
     grid-template-columns: 1fr;
   }
 }
