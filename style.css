@@ -177,6 +177,7 @@ footer a {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+
 .grid-3-columns-uneven {
   grid-template-columns: 1fr 2fr 2fr;
 }
